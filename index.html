@@ -9,24 +9,48 @@
 <body>
     <form>
         <h1>Cadastre-se</h1>
-        <input type="text" name="nome" id="nome"
-        placeholder="Nome completo"
-        title="Digite seu nome completo.">
-        <input type="text" name="cpf" id="cpf"
-        placeholder="CPF"
-        title="Ex.: 000.000.000-00">
-        <input type="email" name="email" id="email"
-        placeholder="E-mail"
-        title="Digite seu email.">
-        <input type="tel" name="telefone" id="telefone"
-        placeholder="Telefone"
-        title="Ex.: (00) 00000-0000">
-        <input type="text" name="cep" id="cep" placeholder="CEP"
-        title="Ex.: 00000-000">
-        <input type="text" name="endereço" id="endereço"
-        placeholder="Endereço completo"
-        title="Ex.: Av. Paulista, 000">
-
+        <div class="form-campo">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome"
+            placeholder="Fulano da Silva"
+            title="Digite seu nome completo."
+            required>
+        </div>
+        <div class="form-campo">
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf"
+            placeholder="000.000.000-00"
+            title="Digite um CPF válido."
+            required>
+        </div>
+        <div class="form-campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"
+            placeholder="fulano@abc.com"
+            title="Digite um email válido."
+            required>
+        </div>
+        <div class="form-campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone"
+            placeholder="(00) 00000-0000"
+            title="Digite seu telefone."
+            required>
+        </div>
+        <div class="form-campo">
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep" 
+            placeholder="00000-000"
+            title="Digite um CEP válido."
+            required>
+        </div>
+        <div class="form-campo">
+            <label for="endereço">Endereço</label>
+            <input type="text" name="endereço" id="endereço"
+            placeholder="Av. Paulista, 000"
+            title="Digite seu endereço completo."
+            required>
+        </div>
         <button type="submit">
             Cadastrar
         </button>

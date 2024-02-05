@@ -9,20 +9,29 @@ form {
     max-width: 400px;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: .5em;
     padding: 1em;
     align-items: center;
     justify-content: center;
 
 }
 
+.form-campo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    color: rgb(21, 72, 134);
+    font-weight: bold;
+}
+
 form input {
-    border: 1px solid rgb(45, 112, 195);
-    border-radius: 5px;
+    border: 1px solid rgb(21, 72, 134);
+    border-radius: .3em;
     padding: 0.5em;
     font-size: 1em;
     font-weight: bold;
-    outline: 1px solid rgb(45, 112, 195);
+    outline: 1px solid rgb(21, 72, 134);
     color: rgb(45, 112, 195);
     width: 100%;
 }
@@ -37,6 +46,7 @@ form button {
     border: none;
     border-radius: 5px;
     padding: 0.5em;
+    margin-top: .5em;
     font-size: 1.5em;
     font-weight: bold;
     background-color: rgb(21, 72, 134);
